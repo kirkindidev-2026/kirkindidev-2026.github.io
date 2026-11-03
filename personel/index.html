@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personel · Kod &amp; Kahve</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--
+  Personel girişi · Mehmet
+  Kullanıcı adı: yaka kartındaki ad, küçük harfle.
+  Şifre: şimdilik müşteri Wi-Fi şifresiyle aynı. Değiştirmeyi UNUTMA!
+-->
+<header class="top"><div class="in">
+  <a class="logo" href="../">Kod <span>&amp;</span> Kahve</a>
+  <nav>
+    <a href="../">Ana sayfa</a>
+    <a href="../menu/">Menü</a>
+    <a href="../galeri/">Galeri</a>
+    <a href="../rezervasyon/">Rezervasyon</a>
+  </nav>
+</div></header>
+<main>
+  <h1>Personel girişi</h1>
+  <p class="lead">Bu alan yalnızca Kod &amp; Kahve çalışanları içindir.</p>
+  <form class="box" id="giris" autocomplete="off">
+    <label>Kullanıcı adı <input id="u" required spellcheck="false" autocapitalize="off"></label>
+    <label>Şifre <input id="p" type="password" required></label>
+    <button class="btn" id="go" type="submit">Giriş</button>
+    <div class="msg" id="giris-msg"></div>
+  </form>
+  <div id="panel"></div>
+</main>
+<footer class="foot"><div class="in">
+  <span>Kod &amp; Kahve · Atakum, Samsun · Bütün kişi ve kurumlar kurgusaldır.</span>
+  <span>OMÜ Siber CTF</span>
+</div></footer>
+<script src="panel.js"></script>
+</body>
+</html>
