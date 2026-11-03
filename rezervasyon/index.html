@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rezervasyon · Kod &amp; Kahve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="logo" href="../">Kod <span>&amp;</span> Kahve</a>
+  <nav>
+    <a href="../">Ana sayfa</a>
+    <a href="../menu/">Menü</a>
+    <a href="../galeri/">Galeri</a>
+    <a class="on" href="../rezervasyon/">Rezervasyon</a>
+  </nav>
+</div></header>
+<main>
+  <h1>Rezervasyon</h1>
+  <p class="lead">Grup çalışması ya da toplantı için masa ayırtabilirsiniz. Onay SMS ile gelir.</p>
+  <form class="box" id="rez">
+    <label>Ad soyad <input name="ad" required autocomplete="name"></label>
+    <label>Telefon <input name="tel" type="tel" required autocomplete="tel"></label>
+    <label>Tarih <input name="tarih" type="date" required></label>
+    <label>Kişi sayısı
+      <select name="kisi"><option>1–2</option><option>3–4</option><option>5–8</option><option>8+</option></select>
+    </label>
+    <button class="btn" type="submit">Gönder</button>
+    <div class="msg" id="rez-msg"></div>
+  </form>
+</main>
+<footer class="foot"><div class="in">
+  <span>Kod &amp; Kahve · Atakum, Samsun · Bütün kişi ve kurumlar kurgusaldır.</span>
+  <span>OMÜ Siber CTF</span>
+</div></footer>
+<script src="../js/site.js"></script>
+</body>
+</html>
